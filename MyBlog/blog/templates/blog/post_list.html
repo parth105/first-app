@@ -1,0 +1,12 @@
+<div>
+	<h1><a href="/">My Blog</a></h1>
+</div>
+
+{% for post in posts %}
+	<div>
+		<br>
+		<h1><em><a href="">{{ post.title }}</a></em></h1>
+		<p>Published on: {{ post.published_date }}</p>
+		<p>{{ post.text | linebreaksbr }}</p>
+	</div>
+{% endfor %}
